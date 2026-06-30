@@ -1,4 +1,4 @@
-*Personal projects — mostly agent-assisted side work, not polished production software.*
+*Personal projects, mostly agent-assisted side work. Not polished production software.*
 
 ### Public
 
@@ -35,7 +35,7 @@
   <sub>Node · WebSockets</sub>
 </td>
 <td valign="top">
-  Virtual Texas hold'em for friends and family — no real money. <a href="https://no-rake-server-production.up.railway.app/">Play →</a>
+  Virtual Texas hold'em for friends and family, no real money. <a href="https://no-rake-server-production.up.railway.app/">Play →</a>
 </td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@
   <sub>Unity · C#</sub>
 </td>
 <td valign="top">
-  First Unity game — tactical turn-based RPG with combat, tile gathering, and base-building loops.
+  First Unity game: tactical turn-based RPG with combat, tile gathering, and base-building loops.
 </td>
 </tr>
 </table>
