@@ -20,6 +20,19 @@ Welcome to my repo...almost everything is just vibecoded projects ha.
 <table>
 <tr>
 <td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/polytopia-plus">polytopia-plus</a></strong><br>
+  <sub>TypeScript · Vitest</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom "plus" features planned. Phase 3 (headless engine). Not affiliated with Midjiwan.
+</td>
+</tr>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
   <strong><a href="https://github.com/chensam93/job-autofill">job-autofill</a></strong><br>
   <sub>Chrome extension · TypeScript</sub><br>
   <sub>~95% agent</sub>
