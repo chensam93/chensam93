@@ -20,6 +20,19 @@ Welcome to my repo...almost everything is just vibecoded projects ha.
 <table>
 <tr>
 <td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/polytopia-plus">polytopia-plus</a></strong><br>
+  <sub>C# · PolyMod</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Mod and tooling for The Battle of Polytopia — balance tweaks, QoL features, and multiplayer experiments.
+</td>
+</tr>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
   <strong><a href="https://github.com/chensam93/job-autofill">job-autofill</a></strong><br>
   <sub>Chrome extension · TypeScript</sub><br>
   <sub>~95% agent</sub>
