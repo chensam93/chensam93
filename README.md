@@ -25,7 +25,7 @@ Welcome to my repo...almost everything is just vibecoded projects ha.
   <sub>~95% agent</sub>
 </td>
 <td valign="top">
-  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom "plus" features planned. Phase 3 (headless engine). Not affiliated with Midjiwan.
+  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom features.
 </td>
 </tr>
 <tr>
