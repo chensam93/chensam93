@@ -80,4 +80,16 @@ Welcome to my repo...almost everything is just vibecoded projects ha.
   First Unity game: tactical turn-based RPG with combat, tile gathering, and base-building loops.
 </td>
 </tr>
-</table>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/gmail-calendar-sync">gmail-calendar-sync</a></strong><br>
+  <sub>Node · GitHub Actions</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Daily Gmail ICS sync to Google Calendar with an email digest. Runs on a schedule while your PC is asleep.
+</td>
+</tr></table>
