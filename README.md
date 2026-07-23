@@ -92,4 +92,6 @@ Welcome to my repo...almost everything is just vibecoded projects ha.
 <td valign="top">
   Daily Gmail ICS sync to Google Calendar with an email digest. Runs on a schedule while your PC is asleep.
 </td>
-</tr></table>
+</tr>
+</table>
+
