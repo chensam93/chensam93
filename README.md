@@ -20,12 +20,12 @@ Welcome to my repo, almost everything is just vibecoded projects.
 <table>
 <tr>
 <td width="200" valign="top">
-  <strong><a href="https://github.com/chensam93/polytopia-plus">polytopia-plus</a></strong><br>
-  <sub>TypeScript · Vitest</sub><br>
+  <strong><a href="https://github.com/chensam93/no-rake">no-rake</a></strong><br>
+  <sub>Node · WebSockets</sub><br>
   <sub>~95% agent</sub>
 </td>
 <td valign="top">
-  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom features.
+  Virtual Texas hold'em for friends and family, no real money. <a href="https://no-rake-server-production.up.railway.app/">Play →</a>
 </td>
 </tr>
 <tr>
@@ -46,25 +46,12 @@ Welcome to my repo, almost everything is just vibecoded projects.
 </tr>
 <tr>
 <td width="200" valign="top">
-  <strong><a href="https://github.com/chensam93/no-rake">no-rake</a></strong><br>
-  <sub>Node · WebSockets</sub><br>
+  <strong><a href="https://github.com/chensam93/polytopia-plus">polytopia-plus</a></strong><br>
+  <sub>TypeScript · Vitest</sub><br>
   <sub>~95% agent</sub>
 </td>
 <td valign="top">
-  Virtual Texas hold'em for friends and family, no real money. <a href="https://no-rake-server-production.up.railway.app/">Play →</a>
-</td>
-</tr>
-<tr>
-<td colspan="2"><br></td>
-</tr>
-<tr>
-<td width="200" valign="top">
-  <strong><a href="https://github.com/chensam93/insider-smells">insider-smells</a></strong><br>
-  <sub>Postgres · Python</sub><br>
-  <sub>~95% agent</sub>
-</td>
-<td valign="top">
-  Polymarket research: ingests trade history into Postgres and surfaces wallet activity and timing patterns. Research tooling, not legal advice.
+  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom features.
 </td>
 </tr>
 <tr>
@@ -93,5 +80,17 @@ Welcome to my repo, almost everything is just vibecoded projects.
   Daily Gmail ICS sync to Google Calendar with an email digest. Runs on a schedule while your PC is asleep.
 </td>
 </tr>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/insider-smells">insider-smells</a></strong><br>
+  <sub>Postgres · Python</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Polymarket research: ingests trade history into Postgres and surfaces wallet activity and timing patterns. Research tooling, not legal advice.
+</td>
+</tr>
 </table>
-
