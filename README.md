@@ -20,19 +20,6 @@ Welcome to my repo, almost everything is just vibecoded projects.
 <table>
 <tr>
 <td width="200" valign="top">
-  <strong><a href="https://github.com/chensam93/sleeper-fantasy">sleeper-fantasy</a></strong><br>
-  <sub>React · TypeScript</sub><br>
-  <sub>~95% agent</sub>
-</td>
-<td valign="top">
-  Local Sleeper league dashboard: roster, waivers, trade sketches, and an Analysis tab that averages Superflex ranks. Reads the public Sleeper API only.
-</td>
-</tr>
-<tr>
-<td colspan="2"><br></td>
-</tr>
-<tr>
-<td width="200" valign="top">
   <strong><a href="https://github.com/chensam93/no-rake">no-rake</a></strong><br>
   <sub>Node · WebSockets</sub><br>
   <sub>~95% agent</sub>
@@ -52,19 +39,6 @@ Welcome to my repo, almost everything is just vibecoded projects.
 </td>
 <td valign="top">
   Fills job applications from a local profile. Handles ATS quirks (Greenhouse, custom dropdowns, demographics); you review every field before submit.
-</td>
-</tr>
-<tr>
-<td colspan="2"><br></td>
-</tr>
-<tr>
-<td width="200" valign="top">
-  <strong><a href="https://github.com/chensam93/polytopia-plus">polytopia-plus</a></strong><br>
-  <sub>TypeScript · Vitest</sub><br>
-  <sub>~95% agent</sub>
-</td>
-<td valign="top">
-  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom features.
 </td>
 </tr>
 <tr>
@@ -98,12 +72,38 @@ Welcome to my repo, almost everything is just vibecoded projects.
 </tr>
 <tr>
 <td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/sleeper-fantasy">sleeper-fantasy</a></strong><br>
+  <sub>React · TypeScript</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Local Sleeper league dashboard: roster, waivers, trade sketches, and an Analysis tab that averages Superflex ranks. Reads the public Sleeper API only.
+</td>
+</tr>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
   <strong><a href="https://github.com/chensam93/insider-smells">insider-smells</a></strong><br>
   <sub>Postgres · Python</sub><br>
   <sub>~95% agent</sub>
 </td>
 <td valign="top">
   Polymarket research: ingests trade history into Postgres and surfaces wallet activity and timing patterns. Research tooling, not legal advice.
+</td>
+</tr>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/polytopia-plus">polytopia-plus</a></strong><br>
+  <sub>TypeScript · Vitest</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Polytopia-inspired turn-based strategy for a private friend group: faithful base-game rules engine with custom features.
 </td>
 </tr>
 </table>
