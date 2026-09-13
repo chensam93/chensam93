@@ -20,6 +20,19 @@ Welcome to my repo, almost everything is just vibecoded projects.
 <table>
 <tr>
 <td width="200" valign="top">
+  <strong><a href="https://github.com/chensam93/sleeper-fantasy">sleeper-fantasy</a></strong><br>
+  <sub>React · TypeScript</sub><br>
+  <sub>~95% agent</sub>
+</td>
+<td valign="top">
+  Local Sleeper league dashboard: roster, waivers, trade sketches, and an Analysis tab that averages Superflex ranks. Reads the public Sleeper API only.
+</td>
+</tr>
+<tr>
+<td colspan="2"><br></td>
+</tr>
+<tr>
+<td width="200" valign="top">
   <strong><a href="https://github.com/chensam93/no-rake">no-rake</a></strong><br>
   <sub>Node · WebSockets</sub><br>
   <sub>~95% agent</sub>
