@@ -19,16 +19,8 @@ Virtual Texas hold'em for friends and family, no real money. It started as "Poke
 - Every hand is saved: replay any hand street by street, see all-in EV, and export the ledger to CSV
 - CI runs Playwright end-to-end tests on desktop, mobile Chrome, mobile Safari and tablet
 
-<table>
-<tr>
-<td width="50%"><img src="assets/no-rake-table.jpg" alt="no-rake poker table mid-hand with the betting controls open"></td>
-<td width="50%"><img src="assets/no-rake-hand-history.png" alt="no-rake hand history panel replaying a showdown street by street"></td>
-</tr>
-<tr>
-<td align="center"><sub>A live hand at the table</sub></td>
-<td align="center"><sub>Hand history with street-by-street replay</sub></td>
-</tr>
-</table>
+<img src="assets/no-rake-table.jpg" alt="no-rake poker table on the flop, with chips in the pot and the bet slider open">
+<p align="center"><sub>Your turn on the flop, with the bet sizing panel open (captured against three bots)</sub></p>
 
 ---
 
@@ -51,16 +43,27 @@ Fills job applications from a profile stored locally. It never submits anything;
 
 ### humble-beginnings
 
-<sub>Unity 6 · C# · 2D URP &nbsp;|&nbsp; ~95% agent</sub>
+<sub>Unity 6 · C# &nbsp;|&nbsp; ~95% agent</sub>
 
-My first real game: a tactical RPG with two loops. You grow a hand-built base from a small camp out across a continuous landmass, and you fight roguelike battles.
+My first real game: a small camp grows into a settlement across a hand-built landmass, with roguelike combat as the second loop.
 
+- Gather wood, stone and food, and build up skills like forestry, masonry and foraging, as a small camp of villagers grows into a settlement
+- The camp grows visibly, from a single house and a fire to a cluster of longhouses by the river
+- Now moving toward a living settlement where time runs continuously and villagers keep their own routines
 - The world map lives in a text file (`map.json`) that syncs into the scene, so a hundred-odd hand-placed locations can be edited and reviewed like code
-- A custom Unity menu handles the busywork: preparing art, rebuilding the UI, scattering foliage, roughing in terrain and capturing screenshots
-- A small command bridge lets outside scripts run those same editor actions while Unity is open
+- A custom Unity menu and a small command bridge automate the busywork: building the world, scattering vegetation and capturing screenshots
 
-<p align="center"><img src="assets/humble-beginnings-camp.png" width="620" alt="humble-beginnings pixel-art camp with a timber house, firewood and labelled map locations"></p>
-<p align="center"><sub>The starting camp and the first location on the map</sub></p>
+<table>
+<tr>
+<td width="50%"><img src="assets/humble-beginnings-camp.jpg" alt="humble-beginnings 3D camp by a river with several timber longhouses around a campfire"></td>
+<td width="50%"><img src="assets/humble-beginnings-map.jpg" alt="humble-beginnings zoomed-out map on day 13 with the camp, a quarry, a river and a named location"></td>
+</tr>
+<tr>
+<td align="center"><sub>The camp after it has grown into a cluster of longhouses</sub></td>
+<td align="center"><sub>Day 13, zoomed out over the valley</sub></td>
+</tr>
+</table>
+<p align="center"><sub>From the in-progress build (September 2026)</sub></p>
 
 ---
 
@@ -123,12 +126,12 @@ A strategy game inspired by The Battle of Polytopia, for a private group of frie
 
 <table>
 <tr>
-<td width="50%"><img src="assets/polytopia-plus-board.png" alt="polytopia-plus 3D board late game, with a combat preview tooltip"></td>
-<td width="50%"><img src="assets/polytopia-plus-tech-tree.png" alt="polytopia-plus radial tech tree"></td>
+<td width="50%"><img src="assets/polytopia-plus-board.png" alt="polytopia-plus 3D board on turn 20 with several tribes, cities and a river"></td>
+<td width="50%"><img src="assets/polytopia-plus-combat.png" alt="polytopia-plus close-up of a swordsman previewing an attack on a defender"></td>
 </tr>
 <tr>
-<td align="center"><sub>Late game on turn 20, previewing an attack</sub></td>
-<td align="center"><sub>The tech tree</sub></td>
+<td align="center"><sub>The whole board on turn 20</sub></td>
+<td align="center"><sub>Previewing an attack: the defender would take 7 damage</sub></td>
 </tr>
 </table>
 
