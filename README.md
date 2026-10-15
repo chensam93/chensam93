@@ -137,6 +137,19 @@ A strategy game inspired by The Battle of Polytopia, for a private group of frie
 
 ---
 
+### File Steward — Safer file management for AI agents
+
+A Windows command-line tool that makes agent-assisted file management more inspectable. It scans selected folders, creates exact-file plans, and checks those plans for changed files and unsupported paths before any cleanup is considered.
+
+- Read-only first release: Scan, Plan and Validate
+- Human-readable reports and structured JSON for agent workflows
+- Synthetic tests covering safety checks and failure cases
+- Planned: approval-gated cache cleanup with an action log and recovery safeguards
+
+Built with PowerShell. Early-stage project; cleanup execution is not enabled.
+
+---
+
 ## Public projects
 
 ### sql-interview-prep
