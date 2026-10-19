@@ -17,7 +17,9 @@ Virtual Texas hold'em for friends and family, no real money. It started as "Poke
 - Full no-limit hold'em from preflop to showdown, including side pots and all-in runouts
 - Private rooms over WebSockets, host controls (adjust stacks, kick, move seats) and optional bots
 - Every hand is saved: replay any hand street by street, see all-in EV, and export the ledger to CSV
-- CI runs Playwright end-to-end tests on desktop, mobile Chrome, mobile Safari and tablet
+- Automatic reconnection, with seats and stacks held temporarily after a dropped connection
+- Custom auto-fold ranges with saved settings, touch and keyboard editing, undo, and a one-hand override
+- CI runs client/server checks and Playwright critical-path tests on desktop Chromium, plus a mobile Chrome smoke test
 
 <img src="assets/no-rake-table.jpg" alt="no-rake poker table on the flop, with chips in the pot and the bet slider open">
 <p align="center"><sub>Your turn on the flop, with the bet sizing panel open (captured against three bots)</sub></p>
@@ -28,12 +30,14 @@ Virtual Texas hold'em for friends and family, no real money. It started as "Poke
 
 <sub>Chrome extension (Manifest V3) · TypeScript · esbuild · Playwright &nbsp;|&nbsp; ~95% agent</sub>
 
-Fills job applications from a profile stored locally. It never submits anything; you review every field first.
+Fills job applications from a profile stored locally. It's designed to leave final application submission to you after review.
 
-- Matches fields on any page by label, placeholder, name and ARIA, then adds fixes for specific applicant tracking systems (Greenhouse, Ashby, iCIMS, Workday, Lever and others) where the generic match fails
+- Matches fields by label, placeholder, name and ARIA, with fixes for specific applicant tracking systems where the generic match fails
 - Handles the awkward inputs: custom dropdowns, comboboxes, split phone fields and demographic questions
 - After each fill, a review panel lists what was filled, what was skipped and what it's unsure about
-- Optional AI drafts for open-ended questions, always editable; there's no backend
+- A review queue tracks job-alert links, flags repeat applications, and steps through supported forms before handing final submission back to me
+- A searchable saved-answer library keeps earlier answers and revisions available for review and reuse
+- Optional, editable AI drafts through OpenAI, with local profile storage and a local service for optional queue and writing-context features
 - Tested against a library of saved application forms
 
 <img src="assets/job-autofill-fill.png" alt="job-autofill popup reporting 13 of 14 fields filled on a Greenhouse-style application form">
@@ -45,13 +49,16 @@ Fills job applications from a profile stored locally. It never submits anything;
 
 <sub>Unity 6 · C# &nbsp;|&nbsp; ~95% agent</sub>
 
-My first real game: a small camp grows into a settlement across a hand-built landmass, with roguelike combat as the second loop.
+My first real game: a Unity prototype about growing a woodland homestead. The current development branch focuses on one founder gathering resources, building and improving skills in a 3D clearing.
 
-- Gather wood, stone and food, and build up skills like forestry, masonry and foraging, as a small camp of villagers grows into a settlement
-- The camp grows visibly, from a single house and a fire to a cluster of longhouses by the river
-- Now moving toward a living settlement where time runs continuously and villagers keep their own routines
-- The world map lives in a text file (`map.json`) that syncs into the scene, so a hundred-odd hand-placed locations can be edited and reviewed like code
-- A custom Unity menu and a small command bridge automate the busywork: building the world, scattering vegetation and capturing screenshots
+- Gather wood, stone and food; manage a pack and depot
+- Build a workbench, craft planks, upgrade your axe and repair a crossing
+- Train Woodcutting, Mining and Crafting
+- Continuous time with pause and save/load
+- In development: illustrated character and inventory UI, plus woodland lighting, vegetation and stone polish
+- Data-driven map authoring and Unity tools for scene builds, screenshots and testing
+
+Settlement expansion and roguelike combat remain longer-term goals.
 
 <table>
 <tr>
@@ -63,7 +70,7 @@ My first real game: a small camp grows into a settlement across a hand-built lan
 <td align="center"><sub>Day 13, zoomed out over the valley</sub></td>
 </tr>
 </table>
-<p align="center"><sub>From the in-progress build (September 2026)</sub></p>
+<p align="center"><sub>Earlier prototype screenshots (September 2026)</sub></p>
 
 ---
 
@@ -71,7 +78,7 @@ My first real game: a small camp grows into a settlement across a hand-built lan
 
 <sub>Node · Gmail API · Google Calendar API · OpenAI &nbsp;|&nbsp; ~95% agent</sub>
 
-Turns my inbox into calendar events every day, then emails me a summary of what changed.
+Built to turn inbox scheduling emails into calendar events and email a summary of changes.
 
 - Handles calendar invites (ICS files), including updates and cancellations
 - Picks up appointment emails that have no invite attached
