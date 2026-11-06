@@ -39,6 +39,7 @@ Fills job applications from a profile stored locally. It's designed to leave fin
 - A searchable saved-answer library keeps earlier answers and revisions available for review and reuse
 - Optional, editable AI drafts through OpenAI, with local profile storage and a local service for optional queue and writing-context features
 - Tested against a library of saved application forms
+- In development: AI-assisted question matching, named job batches from links, tabs and emails, and results that refresh after manual edits.
 
 <img src="assets/job-autofill-fill.png" alt="job-autofill popup reporting 13 of 14 fields filled on a Greenhouse-style application form">
 <p align="center"><sub>A sample profile ("Jane Example") filling a test form built like a real Greenhouse application. 13 of 14 fields filled; the résumé shows as missed because none was loaded.</sub></p>
@@ -57,6 +58,7 @@ My first real game: a Unity prototype about growing a woodland homestead. The cu
 - Continuous time with pause and save/load
 - In development: illustrated character and inventory UI, plus woodland lighting, vegetation and stone polish
 - Data-driven map authoring and Unity tools for scene builds, screenshots and testing
+- The development branch now includes updated founder movement and character appearance; movement and visual polish are ongoing.
 
 Settlement expansion and roguelike combat remain longer-term goals.
 
