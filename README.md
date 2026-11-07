@@ -14,11 +14,9 @@ Most of what I build is private, so each project below has screenshots and a sho
 
 Virtual Texas hold'em for friends and family, no real money. It started as "PokerNow, but with more features."
 
-- Full no-limit hold'em from preflop to showdown, including side pots and all-in runouts
-- Private rooms over WebSockets, host controls (adjust stacks, kick, move seats) and optional bots
-- Every hand is saved: replay any hand street by street, see all-in EV, and export the ledger to CSV
-- Automatic reconnection, with seats and stacks held temporarily after a dropped connection
-- Custom auto-fold ranges with saved settings, touch and keyboard editing, undo, and a one-hand override
+- Private rooms over WebSockets, host controls and optional bots
+- No-limit hold'em with side pots and all-in runouts; saved hands with replay, all-in EV and CSV exports
+- Reconnection with seats and stacks held temporarily, plus custom auto-fold ranges
 - CI runs client/server checks and Playwright critical-path tests on desktop Chromium, plus a mobile Chrome smoke test
 
 <img src="assets/no-rake-table.jpg" alt="no-rake poker table on the flop, with chips in the pot and the bet slider open">
@@ -32,14 +30,13 @@ Virtual Texas hold'em for friends and family, no real money. It started as "Poke
 
 Fills job applications from a profile stored locally. It's designed to leave final application submission to you after review.
 
-- Matches fields by label, placeholder, name and ARIA, with fixes for specific applicant tracking systems where the generic match fails
-- Handles the awkward inputs: custom dropdowns, comboboxes, split phone fields and demographic questions
-- After each fill, a review panel lists what was filled, what was skipped and what it's unsure about
-- A review queue tracks job-alert links, flags repeat applications, and steps through supported forms before handing final submission back to me
-- A searchable saved-answer library keeps earlier answers and revisions available for review and reuse
-- Optional, editable AI drafts through OpenAI, with local profile storage and a local service for optional queue and writing-context features
-- Tested against a library of saved application forms
-- In development: AI-assisted question matching, named job batches from links, tabs and emails, and results that refresh after manual edits.
+- Matches fields by label, placeholder, name and ARIA, with support for custom dropdowns, comboboxes and split phone fields
+- Review results flag filled, skipped and uncertain fields; a searchable answer library supports reuse
+- A job-link queue flags repeat applications and steps through supported forms for review
+- Optional, editable OpenAI drafts, plus a local service for optional queue and writing-context features
+- In development: AI-assisted question matching, named batches from links, tabs and emails, and results that refresh after manual edits
+
+Tested against a library of saved application forms.
 
 <img src="assets/job-autofill-fill.png" alt="job-autofill popup reporting 13 of 14 fields filled on a Greenhouse-style application form">
 <p align="center"><sub>A sample profile ("Jane Example") filling a test form built like a real Greenhouse application. 13 of 14 fields filled; the résumé shows as missed because none was loaded.</sub></p>
@@ -50,15 +47,12 @@ Fills job applications from a profile stored locally. It's designed to leave fin
 
 <sub>Unity 6 · C# &nbsp;|&nbsp; ~95% agent</sub>
 
-My first real game: a Unity prototype about growing a woodland homestead. The current development branch focuses on one founder gathering resources, building and improving skills in a 3D clearing.
+My first real game: a Unity homestead prototype. On the development branch, one founder gathers resources, builds and develops skills in a 3D clearing.
 
-- Gather wood, stone and food; manage a pack and depot
-- Build a workbench, craft planks, upgrade your axe and repair a crossing
-- Train Woodcutting, Mining and Crafting
-- Continuous time with pause and save/load
-- In development: illustrated character and inventory UI, plus woodland lighting, vegetation and stone polish
+- Gather resources, manage a pack and depot, craft planks, upgrade your axe and repair a crossing
+- Train Woodcutting, Mining and Crafting, with continuous time, pause and save/load
+- In development: updated founder movement and appearance, illustrated character and inventory UI, and woodland scenery
 - Data-driven map authoring and Unity tools for scene builds, screenshots and testing
-- The development branch now includes updated founder movement and character appearance; movement and visual polish are ongoing.
 
 Settlement expansion and roguelike combat remain longer-term goals.
 
@@ -80,12 +74,11 @@ Settlement expansion and roguelike combat remain longer-term goals.
 
 <sub>Node · Gmail API · Google Calendar API · OpenAI &nbsp;|&nbsp; ~95% agent</sub>
 
-Built to turn inbox scheduling emails into calendar events and email a summary of changes.
+Built to turn scheduling emails into calendar events and send a summary of changes.
 
-- Handles calendar invites (ICS files), including updates and cancellations
-- Picks up appointment emails that have no invite attached
-- Package tracking: shipping emails become all-day delivery events that move when the ETA changes, using the live UPS tracking API
-- An LLM reads personal and important threads and turns them into follow-ups and meetings, checking for an existing event first so nothing is added twice
+- Reads ICS invites, updates and cancellations, plus appointment emails without invites
+- Creates all-day delivery events from shipping emails and updates ETAs through the UPS tracking API
+- Uses an LLM to extract follow-ups and meetings, checking for existing events before adding them
 
 <p align="center"><img src="assets/gmail-calendar-sync-digest.png" width="560" alt="gmail-calendar-sync summary email listing created, updated and cancelled events"></p>
 <p align="center"><sub>The summary email, produced by the project's own formatter. The events are made-up sample data.</sub></p>
@@ -96,12 +89,11 @@ Built to turn inbox scheduling emails into calendar events and email a summary o
 
 <sub>React · TypeScript · Vite &nbsp;|&nbsp; ~95% agent</sub>
 
-A local dashboard for my fantasy football team. It tells me which waiver claims and trades to make for my Sleeper league.
+A local dashboard for my Sleeper league, recommending waiver claims and trades.
 
-- Six tabs: Plan, Team, Waivers, Trades, Analysis and League
-- Scores every trade and waiver claim by how many lineup points it adds over the rest of the regular season, using only legal lineups
-- Averages expert rankings from FantasyPros, ESPN and RotoBaller, and runs seeded season simulations for playoff and title odds
-- Read-only: it uses Sleeper's public API and can't submit anything. Saved inputs can be replayed offline to check any recommendation
+- Scores trades and waivers by added lineup points over the remaining regular season, using only legal lineups
+- Expert rankings from FantasyPros, ESPN and RotoBaller, plus seeded simulations for playoff and title odds
+- Read-only: uses Sleeper's public API, cannot submit actions, and can replay saved inputs offline
 
 <img src="assets/sleeper-fantasy-pipeline.png" alt="sleeper-fantasy pipeline: Sleeper API, expert ranks and projections feed a local cache, then an analysis engine, then the React dashboard">
 
@@ -111,12 +103,13 @@ A local dashboard for my fantasy football team. It tells me which waiver claims 
 
 <sub>Python · uv · Postgres · Alembic · Railway &nbsp;|&nbsp; ~95% agent</sub>
 
-Research tooling for Polymarket. The goal is to spot trading that looks coordinated or unusually well timed: who traded, how much, and how early.
+Research tooling for Polymarket, exploring coordinated or unusually timed trading.
 
-- Streams live trades from Polymarket's market WebSocket and backfills historical fills from the public orderbook subgraph
-- Stores everything in one Postgres database, removing duplicates, with versioned schema migrations
-- A small password-protected dashboard confirms the data is flowing
-- Next up: linking wallets, scoring timing and alerts. This is for research, not legal advice
+- Streams market trades and backfills historical fills into deduplicated Postgres storage
+- Versioned schema migrations and a password-protected data-flow dashboard
+- Planned: linking wallets, timing scores and alerts
+
+This is for research, not legal advice.
 
 <img src="assets/insider-smells-pipeline.png" alt="insider-smells pipeline: live feed, historical fills and market list go through ingest into Postgres and a dashboard">
 
@@ -126,12 +119,12 @@ Research tooling for Polymarket. The goal is to spot trading that looks coordina
 
 <sub>TypeScript · React · Three.js · Fastify · SQLite · Vitest &nbsp;|&nbsp; ~95% agent</sub>
 
-A strategy game inspired by The Battle of Polytopia, for a private group of friends. It recreates the base game's rules and adds our own custom features.
+A strategy game inspired by The Battle of Polytopia, with custom features for a private group of friends.
 
-- A rules engine that runs with no graphics and always gives the same result for the same moves, with content matched to the Steam v2.16.5 release
-- Map generation, an invite-code lobby and online multiplayer where players take turns at their own pace, with the server deciding what's legal
-- A 3D board built with Three.js, plus the tech tree, combat previews and a phone layout
-- The current phase is visual polish: matching the original game's look, screenshot by screenshot
+- A deterministic rules engine with content matched to Steam v2.16.5
+- Map generation, invite-code lobbies and asynchronous multiplayer with server-enforced rules
+- Three.js board, tech tree, combat previews and phone layout
+- Visual polish is ongoing, using screenshot comparisons with the original game
 
 <table>
 <tr>
@@ -148,14 +141,13 @@ A strategy game inspired by The Battle of Polytopia, for a private group of frie
 
 ### File Steward — Safer file management for AI agents
 
-A Windows command-line tool that makes agent-assisted file management more inspectable. It scans selected folders, creates exact-file plans, and checks those plans for changed files and unsupported paths before any cleanup is considered.
+A read-only Windows PowerShell tool for agent-assisted file review. It scans selected folders, creates exact-file plans and checks for changed files or unsupported paths.
 
-- Read-only first release: Scan, Plan and Validate
-- Human-readable reports and structured JSON for agent workflows
+- Scan, Plan and Validate, with human-readable reports and structured JSON
 - Synthetic tests covering safety checks and failure cases
 - Planned: approval-gated cache cleanup with an action log and recovery safeguards
 
-Built with PowerShell. Early-stage project; cleanup execution is not enabled.
+Early-stage; cleanup execution is not enabled.
 
 ---
 
@@ -165,4 +157,4 @@ Built with PowerShell. Early-stage project; cleanup execution is not enabled.
 
 <sub>DuckDB · Python &nbsp;|&nbsp; ~70% agent &nbsp;|&nbsp; <a href="https://github.com/chensam93/sql-interview-prep">View repo →</a></sub>
 
-Interview-style SQL questions backed by DuckDB sample data. You run queries against real rows instead of whiteboarding on paper.
+Interview-style SQL questions you can run against DuckDB sample data.
