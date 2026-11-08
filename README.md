@@ -58,18 +58,6 @@ My first real game: a Unity homestead prototype. On the development branch, one 
 
 Settlement expansion and roguelike combat remain longer-term goals.
 
-<table>
-<tr>
-<td width="50%"><img src="assets/humble-beginnings-camp.jpg" alt="humble-beginnings 3D camp by a river with several timber longhouses around a campfire"></td>
-<td width="50%"><img src="assets/humble-beginnings-map.jpg" alt="humble-beginnings zoomed-out map on day 13 with the camp, a quarry, a river and a named location"></td>
-</tr>
-<tr>
-<td align="center"><sub>The camp after it has grown into a cluster of longhouses</sub></td>
-<td align="center"><sub>Day 13, zoomed out over the valley</sub></td>
-</tr>
-</table>
-<p align="center"><sub>Earlier prototype screenshots (September 2026)</sub></p>
-
 ---
 
 ### gmail-calendar-sync
