@@ -10,11 +10,9 @@ Most of what I build is private, so each project below has screenshots and a sho
 
 ### no-rake
 
-<sub>Node · Fastify · WebSockets · React · Postgres · Railway &nbsp;|&nbsp; ~95% agent &nbsp;|&nbsp; <a href="https://no-rake-server-production.up.railway.app/">Live demo (temporarily unavailable) →</a></sub>
+<sub>Node · Fastify · WebSockets · React · Postgres · Railway &nbsp;|&nbsp; ~95% agent &nbsp;|&nbsp; <a href="https://no-rake-server-production.up.railway.app/">Live demo →</a></sub>
 
 Virtual Texas hold'em for friends and family, no real money. It started as "PokerNow, but with more features."
-
-**Status:** The Railway-hosted live demo is temporarily unavailable.
 
 - Private rooms over WebSockets, host controls and optional bots
 - No-limit hold'em with side pots and all-in runouts; saved hands with replay, all-in EV and CSV exports
