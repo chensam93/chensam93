@@ -1,6 +1,6 @@
 Welcome to my repo, almost everything is just vibecoded projects.
 
-Most of what I build is private, so each project below has screenshots and a short tour to show what it does.
+Most of what I build is private, so the projects below include short tours and selected screenshots.
 
 **Jump to:** [no-rake](#no-rake) · [job-autofill](#job-autofill) · [humble-beginnings](#humble-beginnings) · [gmail-calendar-sync](#gmail-calendar-sync) · [sleeper-fantasy](#sleeper-fantasy) · [insider-smells](#insider-smells) · [polytopia-plus](#polytopia-plus) · [sql-interview-prep](#sql-interview-prep)
 
@@ -34,7 +34,7 @@ Fills job applications from a profile stored locally. It's designed to leave fin
 - Review results flag filled, skipped and uncertain fields; a searchable answer library supports reuse
 - A job-link queue flags repeat applications and steps through supported forms for review
 - Optional, editable OpenAI drafts, plus a local service for optional queue and writing-context features
-- In development: AI-assisted question matching, named batches from links, tabs and emails, and results that refresh after manual edits
+- Includes AI-assisted question matching, named batches from links, tabs and emails, and results that refresh after manual edits.
 
 Tested against a library of saved application forms.
 
